@@ -1,0 +1,64 @@
+<html>  
+
+  	<head>
+ 
+    		<title> Welcome | The Cult Online </title>
+    
+  	</head> 
+	
+  	<body style="background-color:#111111; color: white;">  
+   		
+		<!--<header style="background-color: #111111;">-->
+			
+			<!--<div>-->
+				<!--<button style="background-color:#dddddd;; margin:100px; color:white; width: 150; height: 50px;" onclick="location.href ='https://3061lrtagspkjmormrt.github.io/wwowp/'">Werewolf Online World Playoffs</button>-->
+				<ul style="list-style-type:none; margin:0; padding:0;">
+  				<li style="display:inline;"><button style="background:#008CBA; height:50px; color:white; border-style:none;" onclick="location.href ='https://3061lrtagspkjmormrt.github.io/wwowp/'">Werewolf Online World Playoffs</button></li>
+					<li style="display:inline; float:right; height:50px;"><button style="background-color: #111111; height:50px; color:white; border-style:none;" onclick="location.href ='https://3061lrtagspkjmormrt.github.io/Cult-Online/game/gamedocs.html'">Leaderboards</button></li>
+					<li style="display:inline; float:right; height:50px;"><button style="background-color: #111111; height:50px; color:white; border-style:none;" onclick="location.href ='https://github.com/3061LRTAGSPKJMORMRT/'">Github</button></li>
+				</ul>
+			<!--</div>-->
+			
+		<!--</header>-->
+		
+		<div style="background:#008CBA; height:300px; text-align:center;">
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<img src="https://fontmeme.com/permalink/210208/5d5e26d5312686dbbad9227e0c587294.png" alt="discord-logo-font" border="0" style="margin-left:auto; margin-right: auto;">
+			<br>
+		</div>
+		<section style="background-color:#111111; margin-top:-10px; display: inline-block; float: left; margin: auto; width: 50%">
+			<h1 style="text-align:center; font-size:40px; font-family: Roboto Condensed,Source Sans Pro,Calibri,Arial,sans-serif;"> About </h1>
+			<div>
+				<p style="line-height: 23px; font-size: 20px; font-family: Roboto,Source Sans Pro,Calibri,Arial,sans-serif;"> 
+					<b>The Cult Online</b> is a multiplayer game that contains at least 2 teams, the village and the cult. The Villager's objective is very simple, which is to succeed every quest. On the other hand, the cult must sabotage the quests by failing them. There are 5 quests in total. If 3 out of 5 quests are approved, the village win, otherwise, the cult wins. 
+				</p>
+			</div>
+			
+		</section>
+		<section style="background-color:#111111; margin-top:-10px; display: inline-block; float: right; margin: auto; width: 50%">
+			<h1 style="text-align:center; font-size:40px; font-family: Roboto Condensed,Source Sans Pro,Calibri,Arial,sans-serif;"> Why This? </h1>
+			<div style="line-height: 23px; font-size: 20px; font-family: Roboto,Source Sans Pro,Calibri,Arial,sans-serif; width:50%; margin: auto;"> 
+				- Great Support <br>
+				- Repeatable tutorial <br>
+				- Easy to use <br>
+				- Understandable documentation <br>
+				- Reliable bot
+			</div>
+		</section>
+		
+		
+		<section style="background-color:#111111; margin-top:200xp; float:center; margin: auto; width: 50%;">
+			<div style="display: flex; flex-direction: row; justify-content: center; margin-top:350px;">
+				<button style="background:#515090; height:50px; border-radius: 9px; float: center; color:white; border-style:none;" onclick="location.href ='https://discord.gg/XzgTK2m'">Discord</button> <br> <br>
+				<button style="background:#507992; height:50px; border-radius: 9px; float: center; color:white; border-style:none; margin-left:9px;" onclick="location.href ='https://3061lrtagspkjmormrt.github.io/Cult-Online/game/gamedocs.html'">Get Started</button>
+			</div>
+		</section>
+				
+	</body>
+
+</html>
