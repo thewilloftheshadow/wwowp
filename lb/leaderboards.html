@@ -9,59 +9,61 @@
 		}
 	</style>
 	<body>
-		Whether or not it's easily possible and done with Javascript I'm not sure but..
-
-As shown in the code below, I've 5 players, each with a different score. I'm looking to code it so that it will automatically relist the players based off how high their score is. IDEALLY, I would also want to colour the first 3 rows to be gold-silver-bronze if that was possible.
-
-Any help making this or pointing me in the right direction would be much appreciated. I'm not sure where I should start.
-
-#container {
-	width: 600px;
-	height: auto;
-}
-
-.row {
-	position: relative;
-	display: block;
-	width: 100%;
-	height: 40px;
-	border-bottom: 1px solid #AFAFAF;
-}
-
-.name {
-	position: relative;
-	display: inline-block;
-	width: 75%;
-	line-height: 45px;
-}
-
-.score {
-	position: relative;
-	display: inline-block;
-	width: 25%;
-}
-<div id="container">
-    <div class="row">
-        <div class="name">Player1</div><div class="score">430</div>
-    </div>
-    
-    <div class="row">
-        <div class="name">Player2</div><div class="score">580</div>
-    </div>
-    
-    <div class="row">
-        <div class="name">Player3</div><div class="score">310</div>
-    </div>
-    
-    <div class="row">
-        <div class="name">Player4</div><div class="score">640</div>
-    </div>
-    
-    <div class="row">
-        <div class="name">Player5</div><div class="score">495</div>
-    </div>
-</div>
+		<div id="leaderboard" class="container">
+        
+		
+		</div>
+    		<button onclick="randomize()">Randomize</button>
 	</body>
 	<script>
+		
+		let scores = [
+    {name: "Player 1", score: 300},
+    {name: "Player 2", score: 370},
+    {name: "Player 3", score: 500},
+    {name: "Player 4", score: 430},
+    {name: "Player 5", score: 340},
+];
+
+function updateLeaderboardView() {
+    let leaderboard = document.getElementById("leaderboard");
+    leaderboard.innerHTML = "";
+
+    scores.sort(function(a, b){ return b.score - a.score  });
+    let elements = []; // we'll need created elements to update colors later on
+    // create elements for each player
+    for(let i=0; i<scores.length; i++) {
+        let name = document.createElement("div");
+        let score = document.createElement("div");
+        name.classList.add("name");
+        score.classList.add("score");
+        name.innerText = scores[i].name;
+        score.innerText = scores[i].score;
+
+        let scoreRow = document.createElement("div");
+        scoreRow.classList.add("row");
+        scoreRow.appendChild(name);
+        scoreRow.appendChild(score);
+        leaderboard.appendChild(scoreRow);
+
+        elements.push(scoreRow);
+
+    }
+
+    let colors = ["gold", "silver", "#cd7f32"];
+    for(let i=0; i < 3; i++) {
+        elements[i].style.color = colors[i];
+    }
+}
+
+updateLeaderboardView();
+function randomize() {
+    for(var i=0; i<scores.length; i++) {
+        scores[i].score = Math.floor(Math.random() * (600 - 300 + 1)) + 300;
+    }
+    // when your data changes, call updateLeaderboardView
+    updateLeaderboardView();
+}
+		
 	</script>
 </html>
